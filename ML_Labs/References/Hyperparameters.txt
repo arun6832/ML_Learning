@@ -1,0 +1,62 @@
+Linear Regression
+Linear Regression typically has fewer hyperparameters compared to other models. Common hyperparameters include:
+
+Fit Intercept: Whether to calculate the intercept for the model. If set to False, no intercept will be used in the calculation.
+
+Normalize: This parameter specifies whether the input features should be normalized.
+
+from sklearn.linear_model import LinearRegression
+model = LinearRegression(fit_intercept=True, normalize=False, copy_X=True)
+
+2. SVM Classifier
+Support Vector Machine (SVM) classifiers have several important hyperparameters:
+
+C: Regularization parameter. The strength of the regularization is inversely proportional to C. Must be strictly positive.
+Kernel: Specifies the kernel type to be used in the algorithm ('linear', 'poly', 'rbf', 'sigmoid', 'precomputed').
+Gamma: Kernel coefficient for 'rbf', 'poly', and 'sigmoid'. If gamma is 'scale', it uses 1 / (n_features * X.var()) as value of gamma.
+Degree: Degree of the polynomial kernel function ('poly'). Ignored by all other kernels.
+Example:
+
+from sklearn.svm import SVC
+model = SVC(C=1.0, kernel='rbf', gamma='scale', degree=3)
+
+3. K Means Clustering
+K-Means clustering has several key hyperparameters:
+
+n_clusters: The number of clusters to form and the number of centroids to generate.
+init: Method for initialization ('k-means++', 'random', or an ndarray).
+n_init: Number of times the k-means algorithm will be run with different centroid seeds.
+max_iter: Maximum number of iterations of the k-means algorithm for a single run.
+tol: Relative tolerance with regards to inertia to declare convergence.
+Example:
+
+from sklearn.cluster import KMeans
+model = KMeans(n_clusters=8, init='k-means++', n_init=10, max_iter=300, tol=1e-4)
+
+4. Neural Networks
+Neural networks have numerous hyperparameters, including:
+
+Learning Rate: Controls how much to change the model in response to the estimated error each time the model weights are updated.
+Number of Layers: The depth of the network (number of layers).
+Number of Neurons per Layer: The width of the network (number of neurons in each layer).
+Activation Functions: Functions applied to the neurons, like 'relu', 'sigmoid', 'tanh', etc.
+Batch Size: The number of training examples utilized in one iteration.
+Epochs: Number of complete passes through the training dataset.
+Example:
+
+
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.optimizers import Adam
+model = Sequential()
+model.add(Dense(units=64, activation='relu', input_dim=100))
+model.add(Dense(units=10, activation='softmax'))
+
+model.compile(optimizer=Adam(learning_rate=0.001), loss='categorical_crossentropy', metrics=['accuracy'])
+These examples demonstrate how to specify hyperparameters for different machine learning models using popular Python libraries such as scikit-learn and Keras. Adjusting these hyperparameters appropriately can significantly affect the performance of the models.
+
+
+
+
+
+

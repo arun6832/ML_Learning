@@ -1,0 +1,14 @@
+Month,Product_Category,Region,Adversting_Cost,Sales,Profit,High_Sales
+January,Electronics,North,5000,15000,7000,TRUE
+February,Clothing,South,3000,12000,5500,FALSE
+March,Home_Appliances,West,4500,18000,8000,TRUE
+April,Electronics,East,5500,16000,7500,TRUE
+May,Clothing,North,4000,13000,6000,FALSE
+June,Home_Appliances,South,3500,14000,6500,FALSE
+July,Electronics,West,6000,17000,7800,TRUE
+August,Clothing,East,5000,16000,7200,TRUE
+September,Home_Appliances,North,4500,14000,6000,FALSE
+October,Electronics,South,3500,15000,6800,FALSE
+November,Clothing,West,4000,17000,7500,TRUE
+December,Home_Appliances,East,5500,18000,8200,TRUE
+,,,,,,

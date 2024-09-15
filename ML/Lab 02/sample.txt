@@ -1,0 +1,13 @@
+Month Product_Category Region Advertising_Cost Sales Profit
+January Electronics North 5000 15000 7000
+February Clothing South 3000 12000 5500
+March Home_Appliances West 4500 18000 8000
+April Electronics East 5500 16000 7500
+May Clothing North 4000 13000 6000
+June Home_Appliances South 3500 14000 6500
+July Electronics West 6000 17000 7800
+August Clothing East 5000 16000 7200
+September Home_Appliances North 4500 14000 6000
+October Electronics South 3500 15000 6800
+November Clothing West 4000 17000 7500
+December Home_Appliances East 5500 18000 8200

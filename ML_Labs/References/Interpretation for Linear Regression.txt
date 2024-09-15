@@ -1,0 +1,21 @@
+1. Mean Absolute Error (MAE)
+The MAE measures the average magnitude of errors in a set of predictions, without considering their direction. It provides a straightforward measure of average error magnitude.
+
+Interpretation: A lower MAE indicates a better fit, showing that the predictions are closer to the actual values on average.
+2. Mean Squared Error (MSE)
+The MSE measures the average of the squares of the errors. It is more sensitive to outliers than MAE because the errors are squared.
+
+Interpretation: A lower MSE indicates a better fit. Since it gives a higher weight to larger errors, it is particularly useful when large errors are undesirable.
+3. Root Mean Squared Error (RMSE)
+The RMSE is the square root of the MSE, representing the average magnitude of errors in the same units as the response variable.
+
+Interpretation: A lower RMSE indicates a better fit, providing an easily interpretable measure of error magnitude.
+4. R-squared (R²)
+R², the coefficient of determination, indicates the proportion of the variance in the dependent variable that is predictable from the independent variables. It ranges from 0 to 1.
+
+Interpretation: An R² of 1 means perfect prediction, while an R² of 0 means the model does not explain any of the variability. A higher R² indicates a better fit, but it should be used with caution to avoid overfitting.
+
+5. Adjusted R-squared
+Adjusted R² adjusts the R² statistic based on the number of predictors in the model.
+
+Interpretation: Useful when comparing models with different numbers of predictors. Unlike R², adjusted R² increases only if the new term improves the model more than would be expected by chance, making it a more reliable indicator when adding more predictors.
